@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang=''>
+<head>
+   <link rel="stylesheet" href="styles.css">
+   <script src="jquery-3.2.1.min.js"></script>
+   <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+   <title>Dropdown Menu</title>
+</head>
+<body>
+
+<div class="container">
+   <!-- Header -->
+   <header>
+      <h1>Dropdown Menu</h1>
+   </header>
+   <!-- /Header -->
+
+   <div class="content">
+      <nav>
+         <ul id="nav">
+             <li><a href="#">Home</a></li>
+             <li><a href="#">About</a></li>
+             <li><a href="#">Operation System ></a>
+               <ul>
+                     <li><a href="#">Windows ></a>
+                       <ul>
+                             <li><a href="#">Windows 7</a></li>
+                             <li><a href="#">Windows 10 ></a>
+                           <ul>
+                              <li><a href="#">Enterprise</a></li>
+                              <li><a href="#">Propesional ></a>
+                              <ul>
+                                 <li><a href="#">Crack</a></li>
+                                 <li><a href="#">Original</a></li>
+                                 <li><a href="#">OEM</a></li>
+                              </ul>
+                              </li>
+                        </ul>
+                     </li>
+                     </ul>
+                     </li>
+                     <li><a href="#">Mac OS ></a>
+                     <ul>
+                           <li><a href="#">OS 9</a></li>
+                           <li><a href="#">OS 10 ></a>
+                     <ul>
+                     <li><a href="#">Enterprise</a></li>
+                              <li><a href="#">Propesional ></a>
+                              <ul>
+                                 <li><a href="#">Crack</a></li>
+                                 <li><a href="#">Original</a></li>
+                                 <li><a href="#">OEM</a></li>
+                              </ul>
+                              </li>
+                        </ul>
+                     </li>
+                     </ul>
+                     </li>
+
+                    
+               </ul>
+             </li>
+         </ul>
+      </nav> <!-- /Navigation -->
+   </div> <!-- /Content -->
+</div> <!-- /Container -->
+
+<script>
+   
+   function mainmenu(){
+$(" #nav ul ").css({display: "none"}); // Opera Fix
+$(" #nav li").hover(function(){
+      $(this).find('ul:first').css({visibility: "visible",display: "none"}).show(400);
+      },function(){
+      $(this).find('ul:first').css({visibility: "hidden"});
+      });
+}
+
+ $(document).ready(function(){
+   mainmenu();
+});
+
+</script>
+
+</body>
+<html>
